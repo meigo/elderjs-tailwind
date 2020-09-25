@@ -74,7 +74,7 @@ module.exports = {
 };
 ```
 
-- Delete assets folder with style.css file
+- Delete style.css from assets folder
 
 - Create tailwind.css file under src folder
 
