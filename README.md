@@ -5,7 +5,7 @@ Based on https://github.com/elderjs/template
 Elder.js: https://github.com/elderjs/elderjs
 
 ```bash
-npx degit meigo/elderjs-template elderjs-tailwind
+npx degit meigo/elderjs-tailwind elderjs-tailwind
 cd elderjs-tailwind
 ```
 
