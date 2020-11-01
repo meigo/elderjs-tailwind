@@ -4,7 +4,7 @@ h1,
 h2,
 h3,
 h4 {
-  @apply font-serif font-bold leading-9;
+  @apply font-serif font-bold leading-9 text-red-500;
 }
 
 h1 {
@@ -29,7 +29,7 @@ a {
 
 .code,
 code {
-  @apply px-1 text-sm bg-gray-300 rounded-lg mr-2 my-1 font-mono inline-block;
+  @apply px-1 text-sm bg-yellow-300 rounded-lg mr-2 my-1 font-mono inline-block;
 }
 
 body {

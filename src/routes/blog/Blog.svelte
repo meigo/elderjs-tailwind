@@ -4,17 +4,6 @@
 </script>
 
 <style>
-  h1 {
-    margin-bottom: 10px;
-  }
-
-  .title {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #ddd;
-  }
-
   :global(h2) {
     margin-top: 2rem;
   }
@@ -51,8 +40,8 @@
 </svelte:head>
 <a href="/">&LeftArrow; Home</a>
 
-<div class="title">
-  <h1>{frontmatter.title}</h1>
+<div class="pb-4 my-4 border-b border-gray-300 border-solid">
+  <h1 class="mb-3">{frontmatter.title}</h1>
   {#if frontmatter.author}<small>By {frontmatter.author}</small>{/if}
 </div>
 
