@@ -1,6 +1,4 @@
 <script>
-  import '../tailwind.css';
-
   export let templateHtml, settings;
 </script>
 

@@ -3,7 +3,7 @@ const sveltePreprocess = require('svelte-preprocess');
 module.exports = {
   preprocess: [
     sveltePreprocess({
-      postcss: {},
+      postcss: { whitelistPatterns: [/svelte-/] },
     }),
   ],
 };

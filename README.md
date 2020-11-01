@@ -1,4 +1,4 @@
-# Elder.js Tailwind Template
+# Elder.js Tailwind Template (Windows)
 
 Based on https://github.com/elderjs/template
 
@@ -11,17 +11,19 @@ cd elderjs-tailwind
 
 ### Use Tailwind classes
 
-directly in html of svelte componets
+directly in markup of svelte components
 
 ```html
 <div class="grid grid-cols-1 gap-4 bg-red-400 sm:grid-cols-3"></div>
 ```
 
-or with @apply directives in svelte component styles or globally in src/tailwind.css
+or using @apply directives in svelte component styles or globally in src/tailwind.css
 
 ```css
 code {
-  @apply px-1 text-sm bg-gray-300 rounded-lg mr-2 my-1 font-mono inline-block;
+  .css-class {
+    @apply px-1 text-sm bg-gray-300 rounded-lg mr-2 my-1 font-mono inline-block;
+  }
 }
 ```
 
@@ -133,7 +135,7 @@ const sveltePreprocess = require('svelte-preprocess');
 module.exports = {
   preprocess: [
     sveltePreprocess({
-      postcss: {},
+      postcss: { whitelistPatterns: [/svelte-/] },
     }),
   ],
 };
@@ -144,10 +146,10 @@ module.exports = {
 ```json
 "scripts": {
   "dev": "run-p dev:server dev:rollup watch:tailwind",
+  "start": "npm run build:tailwind && npm run build:rollup && npm run dev:server",
+  "build": "node ./src/cleanPublic.js && npm run build:tailwind && npm run build:rollup && npm run build:html",
   "watch:tailwind": "postcss src/tailwind.css -o public/style.css -w",
   "build:tailwind": "cross-env NODE_ENV=production postcss src/tailwind.css -o public/style.css",
-  "start": "npm run build:rollup && npm run dev:server",
-  "build": "node ./src/cleanPublic.js && npm run build:tailwind && npm run build:rollup && npm run build:html",
 ```
 
 - Import tailwind.css into src/layouts/Layout.svelte

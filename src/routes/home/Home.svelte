@@ -12,7 +12,7 @@
 
 <style>
   .banner {
-    @apply py-4 px-8 bg-gray-300 rounded mb-4;
+    @apply py-4 px-8 bg-yellow-400 rounded-lg mb-4;
   }
 
   .entries {
@@ -81,7 +81,7 @@
 {/if}
 
 <div class="banner">
-  <h1 class="text-red-500">Hello World: Welcome to Elder.js!</h1>
+  <h1 class="text-red-500">Hello Tailwind: Welcome to Elder.js!</h1>
   <p>Woot! You've got Elder.js installed. This template is designed to show you the ropes of how things work.</p>
 
   <p>

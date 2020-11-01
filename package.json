@@ -5,8 +5,7 @@
   "main": "./src/build.js",
   "scripts": {
     "dev": "run-p dev:server dev:rollup watch:tailwind",
-    "build-run": "npm run build && npm run sirv",
-    "start": "npm run build:rollup && npm run dev:server",
+    "start": "npm run build:tailwind && npm run build:rollup && npm run dev:server",
     "build": "node ./src/cleanPublic.js && npm run build:tailwind && npm run build:rollup && npm run build:html",
     "watch:tailwind": "postcss src/tailwind.css -o public/style.css -w",
     "build:tailwind": "cross-env NODE_ENV=production postcss src/tailwind.css -o public/style.css",
@@ -24,9 +23,9 @@
     "node": ">= 12.0.0"
   },
   "dependencies": {
-    "@elderjs/elderjs": "^1.0.2",
-    "@elderjs/plugin-browser-reload": "^0.1.6",
-    "@elderjs/plugin-markdown": "^0.1.6",
+    "@elderjs/elderjs": "^1.1.6",
+    "@elderjs/plugin-browser-reload": "^0.1.14",
+    "@elderjs/plugin-markdown": "^0.1.14",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
