@@ -76,7 +76,7 @@ module.exports = {
 };
 ```
 
-- Delete assets folder with style.css file
+- Delete style.css from assets folder
 
 - Create tailwind.css file under src folder
 
@@ -150,10 +150,4 @@ module.exports = {
   "build": "node ./src/cleanPublic.js && npm run build:tailwind && npm run build:rollup && npm run build:html",
   "watch:tailwind": "postcss src/tailwind.css -o public/style.css -w",
   "build:tailwind": "cross-env NODE_ENV=production postcss src/tailwind.css -o public/style.css",
-```
-
-- Import tailwind.css into src/layouts/Layout.svelte
-
-```js
-import '../tailwind.css';
 ```
