@@ -23,7 +23,7 @@
     "node": ">= 12.0.0"
   },
   "dependencies": {
-    "@elderjs/elderjs": "^1.1.6",
+    "@elderjs/elderjs": "^1.1.7",
     "@elderjs/plugin-browser-reload": "^0.1.14",
     "@elderjs/plugin-markdown": "^0.1.14",
     "body-parser": "^1.19.0",

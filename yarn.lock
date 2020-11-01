@@ -1459,10 +1459,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@elderjs/elderjs@^1.1.6":
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/@elderjs/elderjs/-/elderjs-1.1.6.tgz#8ee6e7fa5fba247a00afdacaa2ccf9d3ee476eda"
-  integrity sha512-lnzTAlCJwCNKub3bt7hwFpYLKSKYyXScM3pk+RWI8Q4RWhoEozbvo9BKow1ICu7ldfyPCtzYoPmi05Gpu3zM+g==
+"@elderjs/elderjs@^1.1.7":
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@elderjs/elderjs/-/elderjs-1.1.7.tgz#acd0ed5c8dedd8771f846a40385eff8c1a6ff412"
+  integrity sha512-+A2NC7MmhZPKPKXm7PzEQWExzO5khflYeh2xfdR5t2fqDPpYqzCJjOiGgdwasskrzpy//VZnWsnq0FETFrFnpQ==
   dependencies:
     "@babel/core" "^7.11.6"
     "@babel/preset-env" "^7.11.5"

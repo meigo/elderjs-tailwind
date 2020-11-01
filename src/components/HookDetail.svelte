@@ -6,9 +6,7 @@
 
 <style>
   .list {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-size: 13px;
+    @apply block mb-2 text-sm;
   }
 
   .list .code {
@@ -16,33 +14,11 @@
   }
 
   .hook {
-    max-width: 100%;
-    text-overflow: wrap;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-collapse: collapse;
-    margin-bottom: 1rem;
-    border-radius: 1rem;
-    position: relative;
-    background: white;
+    @apply p-4 mb-4 max-w-full border border-solid border-gray-300 border-collapse break-words rounded-lg relative bg-yellow-400;
   }
 
   .hook-number {
-    position: absolute;
-    top: 0;
-    right: 0px;
-    width: 2rem;
-    height: 1.75rem;
-    border-top-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    text-align: center;
-    padding-top: 3px;
-    background: #ddd;
-    font-size: 14px;
-  }
-
-  .overview {
-    margin-right: 1rem;
+    @apply absolute top-0 right-0 w-8 h-8 rounded-tr-lg rounded-bl-lg text-center pt-1 bg-red-500 text-sm text-white;
   }
 
   @media (min-width: 768px) {
@@ -60,18 +36,12 @@
   :global(.use ul) {
     padding-left: 1rem;
   }
-
-  .overview {
-    margin-bottom: 0.75rem;
-    padding-bottom: 0.75rem;
-    border-bottom: 1px solid #ddd;
-  }
 </style>
 
 <div class="hook">
   {#if i || i === 0}<span class="hook-number">{i + 1}.</span>{/if}
 
-  <div class="overview">
+  <div class="pb-3 mb-3 mr-4 border-b border-gray-300 border-solid">
     <span class="hook-name">
       {#if hook.link && hook.link.length > 0}<a href={hook.link}>{hook.hook}</a>{:else}{hook.hook}{/if}
     </span> : {hook.context}
